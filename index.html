@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desain Komunikasi Visual SMK Muhammadiyah Pagaralam</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="FOLDER GAMBAR/tittle.png" type="image">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="navbar">
+        <div class="container">
+            <div class="logo">
+                <a href="#"><img src="FOLDER GAMBAR/logo dkv web-01.png" alt="Logo Desain Komunikasi Visual"></a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#about-section">Desain Komunikasi Visual</a></li>
+                <li><a href="#profile-section">Profile</a></li>
+                <li><a href="#contact-section">Contact</a></li>
+            </ul>
+        </div> 
+    </div>
+
+    <div class="main-content">
+        <div class="content-section" id="about-section">
+            <h2>Jurusan Desain Komunikasi Visual Di SMK Muhammadiyah Pagaralam</h2>
+            <img src="FOLDER GAMBAR/gambar1.jpg" alt="Gambar 1">
+            <p>SMK Muhammadiyah Pagaralam memiliki salah satu jurusan yaitu Desain Komunikasi Visual atau yang bisa dikenal dengan DKV, jurusan ini mempelajari tentang penyampaian pesan dengan menggunakan elemen desain grafis, seperti huruf, warna, gambar, dan lay out. Prospek kerja di jurusan DKV sangat banyak, kalian bisa menjadi Graphic Designer, Web Designer, Social Media Specialist, Content Creator dan masih banyak lagi, dan kami jurusan DKV dari SMK Muhammadiyah Pagaralam mengajak kalian untuk bergabung dengan kami.</p>
+        </div>
+        
+        <div class="content-section" id="profile-section">
+            <h2>Karya yang kami dihasilkan</h2>
+            <img src="FOLDER GAMBAR/gambar2.jpg" alt="Gambar 2">
+            <p>Isi dari profil atau karya yang telah dihasilkan.</p>
+        </div>
+
+    </div>
+    
+    <div class="content-section" id="assignment-section">
+        <h2>Submit Your Assignment</h2>
+        <div class="assignment-form">
+            <form id="assignmentForm" action="submit_assignment.php" method="POST" enctype="multipart/form-data">
+                <input type="text" name="name" id="name" placeholder="Your Name" required>
+                <input type="email" name="email" id="email" placeholder="Your Email" required>
+                <textarea name="description" id="description" placeholder="Assignment Description" rows="5" required></textarea>
+                <input type="file" name="file" id="file" required>
+                <button type="submit" id="submitBtn">Submit Assignment</button>
+            </form>
+        </div>
+        <div class="message" id="messageDiv"></div>
+    </div>
+
+    <div class="content-section" id="contact-section">
+        <h2>Contact Us</h2>
+        <div class="contact-form">
+            <form id="contactForm" action="submit.php" method="POST">
+                <input type="text" name="name" id="name" placeholder="Your Name" required>
+                <input type="email" name="email" id="email" placeholder="Your Email" required>
+                <textarea name="message" id="message" placeholder="Your Message" rows="5" required></textarea>
+                <button type="submit" id="submitBtn">Kirim pesan</button>
+            </form>
+        </div>
+        <div class="contact-info">
+            <p>Untuk informasi selanjutnya, mohon hubungi:</p>
+            <p>Email: alfatirruhollaramadhan@gmail.com</p>
+            <p>Phone: +6289636070390</p>
+            <p>Alamat: Jalan Komisaris Besar H.Umar No. 1123 Pagaralam Sumatera Selatan 31525</p>
+        </div>
+        <div class="message" id="messageDiv"></div>
+    </div>
+    </div>
+</body>
+</html>

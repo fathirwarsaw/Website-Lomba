@@ -1,0 +1,147 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex; /* Tambahkan display flex untuk mengatur posisi navbar */
+    justify-content: space-between; /* Memisahkan logo dan nav-links */
+    align-items: center; /* Menengahkan secara vertikal */
+}
+
+/* Navbar */
+.navbar {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.logo {
+    margin-right: auto; /* Biarkan logo berada di sebelah kiri */
+}
+
+.logo img {
+    width: 50px;
+    height: auto;
+}
+
+.nav-links {
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-end; /* Mengatur nav-links ke kanan */
+}
+
+.nav-links li {
+    margin-left: 20px; /* Jarak antar item */
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.2rem;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #615960;
+}
+
+/* Main Content */
+.main-content {
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+/* Content Sections */
+.content-section {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    margin-bottom: 40px;
+    padding: 30px;
+}
+
+.content-section h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.content-section p {
+    font-size: 1.1rem;
+}
+
+.content-section img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+/* Form Styling */
+.assignment-form {
+    margin-bottom: 20px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea,
+input[type="file"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-sizing: border-box;
+}
+
+button[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+.message {
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 3px;
+}
+
+.message p {
+    margin: 0;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-links {
+        justify-content: flex-start; /* Posisikan nav-links di atas */
+    }
+
+    .nav-links li {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+}
